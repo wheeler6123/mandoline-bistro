@@ -6,12 +6,15 @@
     background-color: #f6f5f4;
 }
 
+
+/* NavBar Styles */
+
 .nav-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 60px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .logo-container {
@@ -30,4 +33,21 @@
 .nav-link-container a {
     text-decoration: none;
     color: slategray;
+}
+
+/* HomePage Styles */
+
+.crsl {
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crsl img {
+   max-height: 100%;
+   max-width: none;
 }
