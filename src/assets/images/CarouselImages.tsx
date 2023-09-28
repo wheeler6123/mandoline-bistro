@@ -1,10 +1,10 @@
-import avocadotoast from './avocadotoast.jpg';
-import bar from './bar.jpg';
-import breadbasket from './breadbasket.jpg';
-import chefplating from './chefplating.jpg';
-import foodontable1 from './foodontable1.jpg';
-import girleating from './girleating.jpg';
-import platedfood from './platedfood.jpg';
+import avocadotoast from './avocadotoast.webp';
+import bar from './bar.webp';
+import breadbasket from './breadbasket.webp';
+import chefplating from './chefplating.webp';
+import foodontable1 from './foodontable1.webp';
+import girleating from './girleating.webp';
+import platedfood from './platedfood.webp';
 
 export const CarouselImages = [
     {

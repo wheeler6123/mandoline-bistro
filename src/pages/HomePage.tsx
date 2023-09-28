@@ -1,5 +1,3 @@
-import React from "react";
-import PhotoCarousel from "../components/PhotoCarousel";
 import ResponsiveCarousel from "../components/ResponsiveCarousel";
 
 
