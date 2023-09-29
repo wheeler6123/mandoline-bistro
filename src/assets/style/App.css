@@ -15,6 +15,12 @@
     align-items: center;
     padding-left: 5vw;
     padding-right: 5vw;
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f6f5f4;
 }
 
 .logo-container {
@@ -37,10 +43,15 @@
 
 /* HomePage Styles */
 
+.home-page-body {
+    margin-top: 120px;
+    display: inline-block;
+}
+
 .crsl {
     height: 90vh;
     width: 90vw;
-    margin: auto;
+    margin: 0 5vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -50,4 +61,46 @@
 .crsl img {
    max-height: 100%;
    max-width: none;
+}
+
+.home-about-container {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin-top: 60px;
+    background-color: blanchedalmond;
+}
+
+.about-img {
+    max-width: 40%;
+    height: auto;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.about-text {
+    width:60%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    padding: 10vw;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(77, 83, 89);
+}
+
+.about-text h2 {
+    font-weight: 200;
+    letter-spacing: .3em;
+}
+
+.about-text p {
+    font-weight: 100;
+    letter-spacing: .1em;
+    line-height: 1.5em;
 }
