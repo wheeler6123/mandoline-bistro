@@ -104,3 +104,74 @@
     letter-spacing: .1em;
     line-height: 1.5em;
 }
+
+.contact-container {
+    display: flex;
+    width: 100vw;
+    height:700px; 
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(77, 83, 89);
+}
+
+.contact-left {
+    width: 50%;
+    height: 100%;
+    background-color: #f6f5f4;
+    overflow: hidden;
+}
+
+.contact-left-text {
+    font-weight: 100;
+    font-size: 0.875em;
+    background-color: whitesmoke;
+    padding: 10%;
+    padding-right: 120px;
+    text-align: end;
+}
+
+.contact-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 50%;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/pastry.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 60%;
+    height: 80%;
+    background-color: hsl(30, 10%, 96%, 80%);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-weight: 200;
+    letter-spacing: .25em;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.contact-form div label {
+    font-weight: 100;
+    letter-spacing: .1em;
+    margin-right: 8px;
+    text-decoration: bold;
+}
+
+.contact-form div input, textarea {
+   border: 1px rgb(190, 163, 122) solid;
+}
