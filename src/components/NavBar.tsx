@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from '../assets/images/Mandoline300x120.png'
 import Rooster from '../assets/images/rooster60x36.png'
-import { NavLink } from "react-router-dom";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
 const NavBar = () => {
@@ -9,16 +9,18 @@ const NavBar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <img src={Logo} alt="logo" />
+                <NavLink smooth to="#top" className="nav-link">
+                    <img src={Logo} alt="logo" />
+                </NavLink>
             </div>
             <div className='nav-link-container'>
-                <NavLink to="/about" className="nav-link">
+                <NavLink smooth to="#about" className="nav-link">
                     About Us
                 </NavLink>
-                <NavLink to="/menu" className="nav-link">
+                <NavLink smooth to="/menu" className="nav-link">
                     Menu
                 </NavLink>
-                <NavLink to="/contact" className="nav-link">
+                <NavLink smooth to="#contact" className="nav-link">
                     Contact
                 </NavLink>
             </div>

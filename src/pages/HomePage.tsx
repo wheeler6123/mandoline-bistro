@@ -5,9 +5,9 @@ import restaurantvert from "../assets/images/restaurantvertRS.webp";
 const HomePage = () => {
 
     return (
-        <div className="home-page-body">
+        <div className="home-page-body" id="top">
             <ResponsiveCarousel />
-            <div className="home-about-container">
+            <div className="home-about-container" id="about">
                 <img src={restaurantvert} alt="restaurant interior" className="about-img" />
                 <div className="about-text">
                     <h2>about our home</h2>
@@ -22,7 +22,7 @@ const HomePage = () => {
                     </p>
                 </div>
             </div>
-            <div className="contact-container">
+            <div className="contact-container" id="contact">
                 <div className="contact-left">
                     <div className="contact-left-text">
                         <p>location</p>
