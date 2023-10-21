@@ -14,13 +14,13 @@ const NavBar = () => {
                 </NavLink>
             </div>
             <div className='nav-link-container'>
-                <NavLink smooth to="#about" className="nav-link">
+                <NavLink smooth to="/#about" className="nav-link">
                     About Us
                 </NavLink>
                 <NavLink smooth to="/menu" className="nav-link">
                     Menu
                 </NavLink>
-                <NavLink smooth to="#contact" className="nav-link">
+                <NavLink smooth to="/#contact" className="nav-link">
                     Contact
                 </NavLink>
             </div>

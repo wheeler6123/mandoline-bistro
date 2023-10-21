@@ -3,47 +3,49 @@
 const MenuPage = () => {
     return (
         <div className="menu-container">
-            <h1>Mandoline Bistro & Boulangerie</h1>
-            <h2 className="menu-subtitle">SNACKS</h2>
-            <br />
-            <span className="menu-item">frites 8</span>
-            <br />
-            <span className="menu-item">fried okra 12</span>
-            <br />
-            <span className="menu-item">savory brussels 15</span>
-            <span className="menu-item-description">brussels, sweet onion, bacon</span>
-            <br />
-            <span className="menu-item">chicken liver mousse 15</span>
-            <span className="menu-item-description">brioche, pickled onion, pickled apple, mustard seed</span>
-            <br />
-            <span className="menu-item">roasted butternut squash 16</span>
-            <span className="menu-item-description">pumpkin seed, goat cheese, pomegranate, sage</span>
-            <br />
-            <h2 className="menu-subtitle">ENTREES</h2>
-            <br />
-            <span className="menu-item">roasted chicken 28</span>
-            <span className="menu-item-description">whole bird, herbs, fingerling potatoes, radicchio</span>
-            <br />
-            <span className="menu-item">pork chop 30</span>
-            <span className="menu-item-description">pork chop, apple, sweet potato, brussels, mustard</span>
-            <br />
-            <span className="menu-item">steak frites 32</span>
-            <span className="menu-item-description">hanger steak, shoestring frites, chimichurri</span>
-            <br />
-            <span className="menu-item">duck breast 34</span>
-            <span className="menu-item-description">duck breast, parsnip, carrot, cranberry</span>
-            <br />
-            <h2 className="menu-subtitle">Breads & Sweets</h2>
-            <br />
-            <span className="menu-item">croissant selection mkt</span>
-            <br />
-            <span className="menu-item">baguette 4</span>
-            <br />
-            <span className="menu-item">biscuits w/ butter & preserves (4) 11</span>
-            <br />
-            <span className="menu-item">pain au chocolate 6</span>
-            <br />
-            <span className="menu-item">beignets (8) 9</span>
+            <div className="menu">
+                <h1>Mandoline Bistro & Boulangerie</h1>
+                <h2 className="menu-subtitle">SNACKS</h2>
+                <br />
+                <span className="menu-item">frites 8</span>
+                <br />
+                <span className="menu-item">fried okra 12</span>
+                <br />
+                <span className="menu-item">savory brussels 15</span>
+                <span className="menu-item-description">brussels, sweet onion, bacon</span>
+                <br />
+                <span className="menu-item">chicken liver mousse 15</span>
+                <span className="menu-item-description">brioche, pickled onion, pickled apple, mustard seed</span>
+                <br />
+                <span className="menu-item">roasted butternut squash 16</span>
+                <span className="menu-item-description">pumpkin seed, goat cheese, pomegranate, sage</span>
+                <br />
+                <h2 className="menu-subtitle">ENTREES</h2>
+                <br />
+                <span className="menu-item">roasted chicken 28</span>
+                <span className="menu-item-description">whole bird, herbs, fingerling potatoes, radicchio</span>
+                <br />
+                <span className="menu-item">pork chop 30</span>
+                <span className="menu-item-description">pork chop, apple, sweet potato, brussels, mustard</span>
+                <br />
+                <span className="menu-item">steak frites 32</span>
+                <span className="menu-item-description">hanger steak, shoestring frites, chimichurri</span>
+                <br />
+                <span className="menu-item">duck breast 34</span>
+                <span className="menu-item-description">duck breast, parsnip, carrot, cranberry</span>
+                <br />
+                <h2 className="menu-subtitle">Breads & Sweets</h2>
+                <br />
+                <span className="menu-item">croissant selection mkt</span>
+                <br />
+                <span className="menu-item">baguette 4</span>
+                <br />
+                <span className="menu-item">biscuits w/ butter & preserves (4) 11</span>
+                <br />
+                <span className="menu-item">pain au chocolate 6</span>
+                <br />
+                <span className="menu-item">beignets (8) 9</span>
+            </div>
         </div>
     )
 }
