@@ -1,8 +1,14 @@
+import React, { useEffect } from 'react';
 import ResponsiveCarousel from "../components/ResponsiveCarousel";
 import restaurantvert from "../assets/images/restaurantvertRS.webp";
 
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 
     return (
         <div className="home-page-body" id="top">

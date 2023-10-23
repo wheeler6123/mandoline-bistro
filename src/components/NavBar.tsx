@@ -4,21 +4,25 @@ import Rooster from '../assets/images/rooster60x36.png'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
+
+    const handleLogoClick: () => void = () => {
+        window.scrollTo(0, 0)
+    };
 
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <NavLink smooth to="#top" className="nav-link">
+                <NavLink smooth to="/#top" className="nav-link" onClick={handleLogoClick}>
                     <img src={Logo} alt="logo" />
                 </NavLink>
             </div>
             <div className='nav-link-container'>
-                <NavLink smooth to="/#about" className="nav-link">
-                    About Us
-                </NavLink>
                 <NavLink smooth to="/menu" className="nav-link">
                     Menu
+                </NavLink>
+                <NavLink smooth to="/#about" className="nav-link">
+                    About Us
                 </NavLink>
                 <NavLink smooth to="/#contact" className="nav-link">
                     Contact

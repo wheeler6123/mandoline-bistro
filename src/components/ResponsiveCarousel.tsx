@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { CarouselImages } from "../assets/images/CarouselImages";
 
 
-const ResponsiveCarousel = () => {
+const ResponsiveCarousel: React.FC = () => {
 
     return (
         <Carousel className="crsl" autoPlay infiniteLoop interval={2000} transitionTime={1000} showArrows={false} showIndicators={false} showThumbs={false}>

@@ -1,10 +1,14 @@
+import React, { useEffect } from 'react';
 
+const MenuPage: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-const MenuPage = () => {
     return (
         <div className="menu-container">
             <div className="menu">
-                <h1>Mandoline Bistro & Boulangerie</h1>
+                <h1>Menu</h1>
                 <h2 className="menu-subtitle">SNACKS</h2>
                 <br />
                 <span className="menu-item">frites 8</span>
@@ -34,7 +38,7 @@ const MenuPage = () => {
                 <span className="menu-item">duck breast 34</span>
                 <span className="menu-item-description">duck breast, parsnip, carrot, cranberry</span>
                 <br />
-                <h2 className="menu-subtitle">Breads & Sweets</h2>
+                <h2 className="menu-subtitle">BREADS & SWEETS</h2>
                 <br />
                 <span className="menu-item">croissant selection mkt</span>
                 <br />

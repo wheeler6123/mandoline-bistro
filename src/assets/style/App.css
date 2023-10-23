@@ -201,6 +201,13 @@
     color: rgb(77, 83, 89);
 }
 
+.menu h1 {
+    font-size: 3em;
+    font-weight: 200;
+    letter-spacing: .1em;
+    font-style: italic;
+}
+
 .menu h2 {
     font-weight: 300;
     letter-spacing: .3em;
