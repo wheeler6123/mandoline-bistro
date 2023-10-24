@@ -29,8 +29,8 @@ const HomePage: React.FC = () => {
                 </div>
             </div>
             <div className="contact-container" id="contact">
-                <div className="contact-left">
-                    <div className="contact-left-text">
+                <div className="contact-details">
+                    <div className="contact-details-text">
                         <p>location</p>
                         <p>114 W. Houston St.</p>
                         <p>Philadelphia, PA 19130</p>
@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
                         <p>10am - 8pm</p>
                     </div>
                 </div>
-                <div className="contact-right">
+                <div className="contact-form-container">
                     <form action="submit" className="contact-form">
                         <h2>contact us</h2>
                         <div className="contact-name">

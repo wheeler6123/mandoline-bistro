@@ -2,8 +2,13 @@
 #root {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f6f5f4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -17,8 +22,9 @@
     padding-right: 5vw;
     position: fixed;
     top: 0;
+    left: 0;
     height: 120px;
-    width: 100%;
+    width: 89vw;
     z-index: 1000;
     background-color: #f6f5f4;
 }
@@ -33,12 +39,35 @@
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    margin-right: 100px;
+    padding-right: 100px;
+}
+
+.mobile-link-container {
+    display: none;
 }
 
 .nav-link-container a {
     text-decoration: none;
     color: slategray;
+}
+
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.nav-hamburger-line {
+    background-color: slategray;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.open {
+    transform: rotate(-45deg);
 }
 
 .nav-link-container a:hover {
@@ -49,29 +78,30 @@
 
 .home-page-body {
     margin-top: 120px;
-    display: inline-block;
 }
 
 .crsl {
     height: 75vh;
-    width: 90vw;
-    margin: 0 5vw;
+    width: 99vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .crsl img {
    max-height: 100%;
    max-width: none;
+   padding: 0 5vw;
 }
 
 .home-about-container {
     display: flex;
-    width: 100%;
+    width: 99vw;
     height: 800px;
     background-color: blanchedalmond;
+    overflow: hidden;
 }
 
 .about-img {
@@ -110,20 +140,21 @@
 
 .contact-container {
     display: flex;
-    width: 100vw;
+    width: 99vw;
     height:700px; 
     font-family: 'Montserrat', sans-serif;
     color: rgb(77, 83, 89);
+    overflow: hidden;
 }
 
-.contact-left {
+.contact-details {
     width: 50%;
     height: 100%;
     background-color: #f6f5f4;
     overflow: hidden;
 }
 
-.contact-left-text {
+.contact-details-text {
     font-weight: 100;
     font-size: 0.875em;
     background-color: whitesmoke;
@@ -132,7 +163,7 @@
     text-align: end;
 }
 
-.contact-right {
+.contact-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,4 +251,80 @@
 .menu-item-description {
     font-size: .8em;
     font-style: italic;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-link-container {
+        display: none;
+    }
+
+    .mobile-link-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        background-color: hsla(0, 0%, 100%, 0.8);
+    }
+
+    .mobile-link-container.show {
+        display: flex;
+    }
+
+    .mobile-link-container .nav-link {
+        text-decoration: none;
+        color: slategray;
+        font-weight: 400;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    
+    .home-about-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .about-img {
+        height: 500px;
+        max-width: none;
+        width: auto;
+        margin: 40px 0 10px 0;
+    }
+
+    .about-text {
+        margin: 25px auto;
+    }
+
+    .contact-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .contact-form-container {
+        max-width: none;
+        width: 97%;
+        height: 700px;
+    }
+
+    .contact-details, .contact-details-text {
+        max-width: none;
+        width: 80%;
+        text-align: center;
+    }
 }

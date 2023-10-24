@@ -6,6 +6,12 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const NavBar: React.FC = () => {
 
+    const [isOpen, setIsOpen] = React.useState<boolean>(false);
+
+    const toggleMenu: () => void = () => {
+        setIsOpen(!isOpen)
+    };
+
     const handleLogoClick: () => void = () => {
         window.scrollTo(0, 0)
     };
@@ -17,7 +23,7 @@ const NavBar: React.FC = () => {
                     <img src={Logo} alt="logo" />
                 </NavLink>
             </div>
-            <div className='nav-link-container'>
+            <div className="nav-link-container">
                 <NavLink smooth to="/menu" className="nav-link">
                     Menu
                 </NavLink>
@@ -28,7 +34,23 @@ const NavBar: React.FC = () => {
                     Contact
                 </NavLink>
             </div>
-            <div>
+            <div className={`mobile-link-container ${isOpen ? 'show' : ''}`}>
+                <NavLink smooth to="/menu" className="nav-link">
+                    Menu
+                </NavLink>
+                <NavLink smooth to="/#about" className="nav-link">
+                    About Us
+                </NavLink>
+                <NavLink smooth to="/#contact" className="nav-link">
+                    Contact
+                </NavLink>
+            </div>
+            <div className="nav-hamburger" onClick={toggleMenu}>
+                <div className={`nav-hamburger-line ${isOpen ? 'open' : ''}`}></div>
+                <div className={`nav-hamburger-line ${isOpen ? 'open' : ''}`}></div>
+                <div className={`nav-hamburger-line ${isOpen ? 'open' : ''}`}></div>
+            </div>
+            <div className="nav-rooster">
                 <img src={Rooster} alt="rooster" />
             </div>
         </div>
