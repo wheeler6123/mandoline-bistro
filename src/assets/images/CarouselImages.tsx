@@ -9,30 +9,26 @@ import platedfood from './platedfood.webp';
 export const CarouselImages = [
     {
         id: 1,
-        src: avocadotoast,
-    },
-    {
-        id: 2,
         src: bar,
     },
     {
-        id: 3,
+        id: 2,
         src: breadbasket,
     },
     {
-        id: 4,
-        src: chefplating,
+        id: 3,
+        src: avocadotoast,
     },
     {
-        id: 5,
+        id: 4,
         src: foodontable1,
     },
     {
-        id: 6,
+        id: 5,
         src: girleating,
     },
     {
-        id: 7,
+        id: 6,
         src: platedfood,
     },
 ];

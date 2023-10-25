@@ -12,7 +12,9 @@ const HomePage: React.FC = () => {
 
     return (
         <div className="home-page-body" id="top">
-            <ResponsiveCarousel />
+            <div className="crsl-container">
+                <ResponsiveCarousel />
+            </div>
             <div className="home-about-container" id="about">
                 <img src={restaurantvert} alt="restaurant interior" className="about-img" />
                 <div className="about-text">
