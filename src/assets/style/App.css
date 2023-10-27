@@ -289,7 +289,7 @@ body {
         display: flex;
     }
     
-    .mobile-link-container .nav-link {
+    .mobile-link-container .nav-link, span {
         text-decoration: none;
         color: slategray;
         font-weight: 400;
@@ -297,6 +297,16 @@ body {
     
     .nav-link {
         text-align: center;
+        margin: 10px 0;
+    }
+
+    .mobile-link-container span {
+        text-align: center;
+        text-decoration: bold;
+        border: 1px solid slategray;
+        border-radius: 2px;
+        width: 12px;
+        align-self: center;
         margin: 10px 0;
     }
 
@@ -330,6 +340,7 @@ body {
     }
 
     .about-text {
+        width: 70%;
         margin: 25px auto;
     }
 
@@ -360,12 +371,39 @@ body {
 
 @media screen and (max-width: 600px) {
 
+    .nav-container {
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 10px;
+        width: 100vw;
+    }
+    
+    .nav-rooster {
+        display: none;
+    }
+
+    .logo-container {
+        width: 240px;
+    }
+
     .home-page-body {
         margin-top: -40px;
     }
 
     .crsl-container {
         height: 50vh;
+    }
+
+    .menu-container {
+        padding: 20px;
+    }
+
+    .menu {
+        padding: 20px 5px;
+    }
+
+    .menu h2 {
+        font-size: 1.2em;
     }
 }
 

@@ -44,6 +44,7 @@ const NavBar: React.FC = () => {
                 <NavLink smooth to="/#contact" className="nav-link">
                     Contact
                 </NavLink>
+                <span className="mobile-close" onClick={() => setIsOpen(false)}>X</span>
             </div>
             <div className="nav-hamburger" onClick={toggleMenu}>
                 <div className={`nav-hamburger-line ${isOpen ? 'open' : ''}`}></div>
