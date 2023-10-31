@@ -1,7 +1,6 @@
 import avocadotoast from './avocadotoast.webp';
 import bar from './bar.webp';
 import breadbasket from './breadbasket.webp';
-import chefplating from './chefplating.webp';
 import foodontable1 from './foodontable1.webp';
 import girleating from './girleating.webp';
 import platedfood from './platedfood.webp';
