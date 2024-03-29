@@ -1,9 +1,9 @@
-import avocadotoast from './avocadotoast.webp';
-import bar from './bar.webp';
-import breadbasket from './breadbasket.webp';
-import foodontable1 from './foodontable1.webp';
-import girleating from './girleating.webp';
-import platedfood from './platedfood.webp';
+import avocadotoast from './avocadotoastRS.webp';
+import bar from './barRS.webp';
+import breadbasket from './breadbasketRS.webp';
+import foodontable1 from './foodontable1RS.webp';
+import girleating from './girleatingRS.webp';
+import platedfood from './platedfoodRS.webp';
 
 export const CarouselImages = [
     {
